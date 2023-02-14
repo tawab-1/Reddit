@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.header-container{
+    position: relative;
+}
+.header{
+    height: 55px;
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+}
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .navbar .nav-logo{
+    flex-basis: 20%;
+    padding-left: 25px;
+}
+.nav-logo img{
+    height: 50px;
+}
+.header .navbar .nav-search{
+    flex-basis: 50%;
+}
+
+.header .navbar .nav-search .form-control {
+    border: .1px solid lightgray;
+    width: 100%;
+    height: 38px;
+    border-radius: 26px;
+    padding-left: 45px;
+}
+.header .navbar .nav-search .form-control:focus{
+    outline: none !important; 
+    border: .1px solid #288EDA !important;
+    border-radius: 22px 22px 0px 0px !important;
+}
+.nav-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #878A8C;
+}
+.header .navbar .nav-buttons{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.header .navbar .nav-buttons button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight:800;
+    border: .2px solid #288EDA;
+    border-radius: 40px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.nav-buttons button:nth-child(2n-1){
+    color: #288EDA;
+    background-color: white;
+}
+.nav-buttons button:nth-child(2){
+    background-color: #288EDA;
+    color: white;
+}
+.header .navbar .nav-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 10%;
+    color: #878A8C;
+}
+.header .navbar .nav-profile i:nth-child(2n-1){
+    font-size: 23px;
+}
+
+/* Hero section */
+.hero{
+    position: relative;
+    top: 55px;
+    display: flex;
+}
+.hero .hero-sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 12%;
+    top: 55px;
+    left: 0;
+    background-color: white;
+}
+.hero .hero-sidebar .feeds ul{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 6px;
+}
+.hero .hero-sidebar .feeds ul li a{
+    text-decoration: none;
+    color: rgba(28,28,28,1);
+    font-size: 14px;
+    line-height: 18px;
+}
+.hero .hero-sidebar .feeds ul li a i{
+    padding-left: 7px;
+}
+.hero .hero-sidebar .topics ul {
+    padding-left: 10px;
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.hero .hero-sidebar .topics ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-left: 7px;
+    color: rgba(28, 28, 28, 1);
+    font-size: 14px;
+    line-height: 18px;
+    
+}
+.hero .hero-main{
+    position: absolute;
+    width: 88%;
+    top: 0;
+    right: 0;
+    flex-basis: 85%;
+    background-color: #DAE0E6;
+    display: flex;
+    justify-content: center;
+}
+.hero-main .hero-main-content{
+    margin-top: 10px;
+    width: 50%;
+    color: #1A1A1B;
+}
+.hero-main .hero-main-content .trending-container{
+    display: flex;
+    gap: 20px;
+}
+.hero-main .hero-main-content .trendings{
+}
+.hero-main .hero-main-content .trendings .cards{
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+    
+}
+.hero-main .hero-main-content .trendings .cards .card{
+    width: 250px;
+    height: 205px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+}
+
+.card1{
+    background: url(/images/treding1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card2{
+    background: url(/images/treding2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
