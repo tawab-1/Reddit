@@ -179,13 +179,13 @@
 }
 
 .card1{
-    background: url(/images/treding1.jpg);
+    background: url(treding1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .card2{
-    background: url(/images/treding2.jpg);
+    background: url(treding2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
